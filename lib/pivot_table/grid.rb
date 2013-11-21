@@ -80,7 +80,7 @@ module PivotTable
     private
 
     def headers(method)
-      @source_data.collect { |c| c.send method }.uniq.sort
+      @source_data.collect { |c| c.send method }.uniq
     end
 
   end
